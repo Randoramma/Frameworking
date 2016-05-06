@@ -14,6 +14,14 @@
 		D0FCAC161CDC376000260864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FCAC151CDC376000260864 /* Assets.xcassets */; };
 		D0FCAC191CDC376000260864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0FCAC171CDC376000260864 /* LaunchScreen.storyboard */; };
 		D0FCAC241CDC376000260864 /* FrameworkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FCAC231CDC376000260864 /* FrameworkingTests.m */; };
+		D0FCAC341CDC40FC00260864 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = D0FCAC331CDC40FC00260864 /* Notes */; };
+		D0FCAC3D1CDC413000260864 /* GSPAN.h in Headers */ = {isa = PBXBuildFile; fileRef = D0FCAC3C1CDC413000260864 /* GSPAN.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0FCAC441CDC413000260864 /* GSPAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FCAC3A1CDC413000260864 /* GSPAN.framework */; };
+		D0FCAC4B1CDC413000260864 /* GSPANTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FCAC4A1CDC413000260864 /* GSPANTests.swift */; };
+		D0FCAC4F1CDC413000260864 /* GSPAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FCAC3A1CDC413000260864 /* GSPAN.framework */; };
+		D0FCAC501CDC413000260864 /* GSPAN.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0FCAC3A1CDC413000260864 /* GSPAN.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D0FCAC591CDC414A00260864 /* RestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FCAC581CDC414A00260864 /* RestController.swift */; };
+		D0FCAC5C1CDC42B500260864 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FCAC5B1CDC42B500260864 /* Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +32,42 @@
 			remoteGlobalIDString = D0FCAC051CDC376000260864;
 			remoteInfo = Frameworking;
 		};
+		D0FCAC451CDC413000260864 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0FCABFE1CDC376000260864 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0FCAC391CDC413000260864;
+			remoteInfo = GSPAN;
+		};
+		D0FCAC471CDC413000260864 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0FCABFE1CDC376000260864 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0FCAC051CDC376000260864;
+			remoteInfo = Frameworking;
+		};
+		D0FCAC4D1CDC413000260864 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0FCABFE1CDC376000260864 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0FCAC391CDC413000260864;
+			remoteInfo = GSPAN;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0FCAC541CDC413000260864 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D0FCAC501CDC413000260864 /* GSPAN.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D0FCAC061CDC376000260864 /* Frameworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frameworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +83,16 @@
 		D0FCAC1F1CDC376000260864 /* FrameworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FCAC231CDC376000260864 /* FrameworkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameworkingTests.m; sourceTree = "<group>"; };
 		D0FCAC251CDC376000260864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0FCAC331CDC40FC00260864 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
+		D0FCAC3A1CDC413000260864 /* GSPAN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GSPAN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0FCAC3C1CDC413000260864 /* GSPAN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSPAN.h; sourceTree = "<group>"; };
+		D0FCAC3E1CDC413000260864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0FCAC431CDC413000260864 /* GSPANTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GSPANTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0FCAC4A1CDC413000260864 /* GSPANTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSPANTests.swift; sourceTree = "<group>"; };
+		D0FCAC4C1CDC413000260864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0FCAC581CDC414A00260864 /* RestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestController.swift; sourceTree = "<group>"; };
+		D0FCAC5A1CDC42B500260864 /* Frameworking-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Frameworking-Bridging-Header.h"; sourceTree = "<group>"; };
+		D0FCAC5B1CDC42B500260864 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0FCAC4F1CDC413000260864 /* GSPAN.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +108,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0FCAC361CDC413000260864 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0FCAC401CDC413000260864 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0FCAC441CDC413000260864 /* GSPAN.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +134,8 @@
 			children = (
 				D0FCAC081CDC376000260864 /* Frameworking */,
 				D0FCAC221CDC376000260864 /* FrameworkingTests */,
+				D0FCAC3B1CDC413000260864 /* GSPAN */,
+				D0FCAC491CDC413000260864 /* GSPANTests */,
 				D0FCAC071CDC376000260864 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +145,8 @@
 			children = (
 				D0FCAC061CDC376000260864 /* Frameworking.app */,
 				D0FCAC1F1CDC376000260864 /* FrameworkingTests.xctest */,
+				D0FCAC3A1CDC413000260864 /* GSPAN.framework */,
+				D0FCAC431CDC413000260864 /* GSPANTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +163,9 @@
 				D0FCAC171CDC376000260864 /* LaunchScreen.storyboard */,
 				D0FCAC1A1CDC376000260864 /* Info.plist */,
 				D0FCAC091CDC376000260864 /* Supporting Files */,
+				D0FCAC331CDC40FC00260864 /* Notes */,
+				D0FCAC5B1CDC42B500260864 /* Test.swift */,
+				D0FCAC5A1CDC42B500260864 /* Frameworking-Bridging-Header.h */,
 			);
 			path = Frameworking;
 			sourceTree = "<group>";
@@ -111,7 +187,37 @@
 			path = FrameworkingTests;
 			sourceTree = "<group>";
 		};
+		D0FCAC3B1CDC413000260864 /* GSPAN */ = {
+			isa = PBXGroup;
+			children = (
+				D0FCAC3C1CDC413000260864 /* GSPAN.h */,
+				D0FCAC3E1CDC413000260864 /* Info.plist */,
+				D0FCAC581CDC414A00260864 /* RestController.swift */,
+			);
+			path = GSPAN;
+			sourceTree = "<group>";
+		};
+		D0FCAC491CDC413000260864 /* GSPANTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0FCAC4A1CDC413000260864 /* GSPANTests.swift */,
+				D0FCAC4C1CDC413000260864 /* Info.plist */,
+			);
+			path = GSPANTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D0FCAC371CDC413000260864 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0FCAC3D1CDC413000260864 /* GSPAN.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		D0FCAC051CDC376000260864 /* Frameworking */ = {
@@ -121,10 +227,12 @@
 				D0FCAC021CDC376000260864 /* Sources */,
 				D0FCAC031CDC376000260864 /* Frameworks */,
 				D0FCAC041CDC376000260864 /* Resources */,
+				D0FCAC541CDC413000260864 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D0FCAC4E1CDC413000260864 /* PBXTargetDependency */,
 			);
 			name = Frameworking;
 			productName = Frameworking;
@@ -149,12 +257,50 @@
 			productReference = D0FCAC1F1CDC376000260864 /* FrameworkingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D0FCAC391CDC413000260864 /* GSPAN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0FCAC511CDC413000260864 /* Build configuration list for PBXNativeTarget "GSPAN" */;
+			buildPhases = (
+				D0FCAC351CDC413000260864 /* Sources */,
+				D0FCAC361CDC413000260864 /* Frameworks */,
+				D0FCAC371CDC413000260864 /* Headers */,
+				D0FCAC381CDC413000260864 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GSPAN;
+			productName = GSPAN;
+			productReference = D0FCAC3A1CDC413000260864 /* GSPAN.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D0FCAC421CDC413000260864 /* GSPANTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0FCAC551CDC413000260864 /* Build configuration list for PBXNativeTarget "GSPANTests" */;
+			buildPhases = (
+				D0FCAC3F1CDC413000260864 /* Sources */,
+				D0FCAC401CDC413000260864 /* Frameworks */,
+				D0FCAC411CDC413000260864 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0FCAC461CDC413000260864 /* PBXTargetDependency */,
+				D0FCAC481CDC413000260864 /* PBXTargetDependency */,
+			);
+			name = GSPANTests;
+			productName = GSPANTests;
+			productReference = D0FCAC431CDC413000260864 /* GSPANTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D0FCABFE1CDC376000260864 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Randy McLain";
 				TargetAttributes = {
@@ -162,6 +308,13 @@
 						CreatedOnToolsVersion = 7.3;
 					};
 					D0FCAC1E1CDC376000260864 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D0FCAC051CDC376000260864;
+					};
+					D0FCAC391CDC413000260864 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D0FCAC421CDC413000260864 = {
 						CreatedOnToolsVersion = 7.3;
 						TestTargetID = D0FCAC051CDC376000260864;
 					};
@@ -182,6 +335,8 @@
 			targets = (
 				D0FCAC051CDC376000260864 /* Frameworking */,
 				D0FCAC1E1CDC376000260864 /* FrameworkingTests */,
+				D0FCAC391CDC413000260864 /* GSPAN */,
+				D0FCAC421CDC413000260864 /* GSPANTests */,
 			);
 		};
 /* End PBXProject section */
@@ -193,11 +348,26 @@
 			files = (
 				D0FCAC191CDC376000260864 /* LaunchScreen.storyboard in Resources */,
 				D0FCAC161CDC376000260864 /* Assets.xcassets in Resources */,
+				D0FCAC341CDC40FC00260864 /* Notes in Resources */,
 				D0FCAC141CDC376000260864 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D0FCAC1D1CDC376000260864 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0FCAC381CDC413000260864 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0FCAC411CDC413000260864 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -212,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0FCAC111CDC376000260864 /* ViewController.m in Sources */,
+				D0FCAC5C1CDC42B500260864 /* Test.swift in Sources */,
 				D0FCAC0E1CDC376000260864 /* AppDelegate.m in Sources */,
 				D0FCAC0B1CDC376000260864 /* main.m in Sources */,
 			);
@@ -225,6 +396,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0FCAC351CDC413000260864 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0FCAC591CDC414A00260864 /* RestController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0FCAC3F1CDC413000260864 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0FCAC4B1CDC413000260864 /* GSPANTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +419,21 @@
 			isa = PBXTargetDependency;
 			target = D0FCAC051CDC376000260864 /* Frameworking */;
 			targetProxy = D0FCAC201CDC376000260864 /* PBXContainerItemProxy */;
+		};
+		D0FCAC461CDC413000260864 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0FCAC391CDC413000260864 /* GSPAN */;
+			targetProxy = D0FCAC451CDC413000260864 /* PBXContainerItemProxy */;
+		};
+		D0FCAC481CDC413000260864 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0FCAC051CDC376000260864 /* Frameworking */;
+			targetProxy = D0FCAC471CDC413000260864 /* PBXContainerItemProxy */;
+		};
+		D0FCAC4E1CDC413000260864 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0FCAC391CDC413000260864 /* GSPAN */;
+			targetProxy = D0FCAC4D1CDC413000260864 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -341,10 +543,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Frameworking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RandyMcLain.Frameworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Frameworking/Frameworking-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -352,10 +559,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Frameworking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RandyMcLain.Frameworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Frameworking/Frameworking-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -383,6 +594,72 @@
 			};
 			name = Release;
 		};
+		D0FCAC521CDC413000260864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GSPAN/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RandyMcLain.GSPAN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D0FCAC531CDC413000260864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GSPAN/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RandyMcLain.GSPAN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D0FCAC561CDC413000260864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GSPANTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RandyMcLain.GSPANTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Frameworking.app/Frameworking";
+			};
+			name = Debug;
+		};
+		D0FCAC571CDC413000260864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GSPANTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RandyMcLain.GSPANTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Frameworking.app/Frameworking";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -402,12 +679,30 @@
 				D0FCAC2A1CDC376000260864 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0FCAC2B1CDC376000260864 /* Build configuration list for PBXNativeTarget "FrameworkingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0FCAC2C1CDC376000260864 /* Debug */,
 				D0FCAC2D1CDC376000260864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0FCAC511CDC413000260864 /* Build configuration list for PBXNativeTarget "GSPAN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0FCAC521CDC413000260864 /* Debug */,
+				D0FCAC531CDC413000260864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D0FCAC551CDC413000260864 /* Build configuration list for PBXNativeTarget "GSPANTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0FCAC561CDC413000260864 /* Debug */,
+				D0FCAC571CDC413000260864 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

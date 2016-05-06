@@ -38,6 +38,16 @@
                ReferencedContainer = "container:Frameworking.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D0FCAC421CDC413000260864"
+               BuildableName = "GSPANTests.xctest"
+               BlueprintName = "GSPANTests"
+               ReferencedContainer = "container:Frameworking.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
