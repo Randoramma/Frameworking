@@ -9,18 +9,18 @@
 import UIKit
 
 @objc
-class RestController: NSObject {
+public class RestController: NSObject {
   
   
-  static let sharedController = RestController()
+  public static let sharedController = RestController()
   
   
   var numberOfAwesome : Int = 0; 
   
   
-  func thisTotoallyWorked () {
+  public func thisReallyTotoallyWorked () {
     
-    print("This totally worked!")
+    print("This totally worked, you just linked a Swift Module to an Objective C project!!")
     
   }
   

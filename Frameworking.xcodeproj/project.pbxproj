@@ -609,6 +609,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.RandyMcLain.GSPAN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -631,6 +632,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.RandyMcLain.GSPAN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -697,6 +699,7 @@
 				D0FCAC531CDC413000260864 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0FCAC551CDC413000260864 /* Build configuration list for PBXNativeTarget "GSPANTests" */ = {
 			isa = XCConfigurationList;
@@ -705,6 +708,7 @@
 				D0FCAC571CDC413000260864 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

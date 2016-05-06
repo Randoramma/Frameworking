@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "Frameworking-Swift.h"
+//#include "GSPAN.h"
+
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
@@ -22,11 +24,14 @@
   // Do any additional setup after loading the view, typically from a nib.
 }
 - (IBAction)segmentedSelected:(id)sender {
+  [[RestController sharedController] thisReallyTotoallyWorked]; 
 }
 
 - (IBAction)buttonPressed:(id)sender {
 
 
+  [[Test sharedTest] thisTotallyWorked];
+  [[RestController sharedController] thisReallyTotoallyWorked]; 
   
 }
 
