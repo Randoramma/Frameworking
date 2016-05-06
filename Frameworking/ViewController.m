@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 @end
 
@@ -18,6 +20,12 @@
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
 }
+- (IBAction)segmentedSelected:(id)sender {
+}
+
+- (IBAction)buttonPressed:(id)sender {
+}
+
 
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
