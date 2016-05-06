@@ -31,7 +31,7 @@
 
 
   [[Test sharedTest] thisTotallyWorked];
-  [[RestController sharedController] thisReallyTotoallyWorked]; 
+  [[RestController sharedController] thisReallyTotoallyWorked];
   
 }
 
