@@ -54,5 +54,9 @@ Finally in the .h file of the objective C class you are referencing from, declar
 
 I also initially # include MODULENAME.h file in the .m of the class, but found I could comment out and was still able to find the Swift class files and functions.
 
-Before I did this everytime I attemped to reference the Swift Class object I would get a compile error of "Use of undeclared identifier" 
+Before I did this everytime I attemped to reference the Swift Class object I would get a compile error of "Use of undeclared identifier"
+
+
+****update
+To add an existing framework, so far what works is to create the framework inside the project and then import the classes individually.  Any files that the framework cannot find can be added manually.  
 
