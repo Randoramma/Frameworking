@@ -19,26 +19,26 @@
 
 ###Terminology
 
-* Framework
-	is a skeleton where the application defines the "meat" of the operation by filling out the skeleton. The skeleton still has code to link up the parts but the most important work is done by the application.
-	* Example:** Web application system, Plug-in manager, GUI system. The framework defines the concept but the application defines the fundamental functionality that end-users care about.
+* **Framework**
+	* is a skeleton where the application defines the "meat" of the operation by filling out the skeleton. The skeleton still has code to link up the parts but the most important work is done by the application.
+	* **Example:** Web application system, Plug-in manager, GUI system. The framework defines the concept but the application defines the fundamental functionality that end-users care about.
 
-* Library
+* **Library**
 	performs specific, well-defined operations.
 	* **Example:**Network protocols, compression, image manipulation, string utilities, regular expression evaluation, math. Operations are self-contained.
 
-* Static
+* **Static**
 	* a unit of code linked at compile time, which does not change.
 	However, iOS static libraries are not allowed to contain images/assets (only code). You can get around this challenge by using a media bundle though.
 
-* Dynamic
+* **Dynamic**
 	* a unit of code and/or assets linked at runtime that may change without the need of relinking.
 
-* Embedded frameworks 
+* **Embedded frameworks** 
 	* are placed within an app’s sandbox and are only available to that app. (Starting iOS 8+ Apple provides a template for embedded framework)
 
-* System frameworks
-	* are stored at the system-level and are available to all apps.
+* **System frameworks**
+	* are stored at the system-level and are available to all apps. (As of iOS 10, this is NOT supported by Apple)
 
 * Thin frameworks 
 	* contain compiled code for one architecture
