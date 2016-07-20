@@ -1,13 +1,12 @@
 ##Frameworking
-_A collection of different types of iOS frameworks_
-
+*A collection of different types of iOS frameworks*
 
 
 ###Embedded Frameworks
-_Branding Framework_
+*Branding Framework*
 [Tutorial Source](http://code.hootsuite.com/an-introduction-to-creating-and-distributing-embedded-frameworks-in-ios/)
 
-_Mixed-Swift-Obc-Framework_
+*Mixed-Swift-Obc-Framework*
 [Tutorial Source](https://github.com/danieleggert/mixed-swift-objc-framework)
 
 ###Static Frameworks
@@ -22,12 +21,11 @@ _Mixed-Swift-Obc-Framework_
 
 * Framework
 	is a skeleton where the application defines the "meat" of the operation by filling out the skeleton. The skeleton still has code to link up the parts but the most important work is done by the application.
-	* #######Example: 
-Web application system, Plug-in manager, GUI system. The framework defines the concept but the application defines the fundamental functionality that end-users care about.
+	* Example:** Web application system, Plug-in manager, GUI system. The framework defines the concept but the application defines the fundamental functionality that end-users care about.
 
 * Library
 	performs specific, well-defined operations.
-	* #######Example:Network protocols, compression, image manipulation, string utilities, regular expression evaluation, math. Operations are self-contained.
+	* **Example:**Network protocols, compression, image manipulation, string utilities, regular expression evaluation, math. Operations are self-contained.
 
 * Static
 	* a unit of code linked at compile time, which does not change.
