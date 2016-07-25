@@ -1,0 +1,3 @@
+ThreeRingView: Sam Davies http://www.raywenderlich.com/117763/video-tutorial-introducing-custom-controls-part-7-control-reuse
+Sounds: winning.mp3 by M-RED http://freesound.org/people/M-RED/sounds/52908/ cc Attribution
+        coint07.mp3 by Taira Komori http://freesound.org/people/Taira%20Komori/sounds/213422/ cc Attribution

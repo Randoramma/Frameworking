@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         
-        print("ViewController")
+        print("\nViewController")
         let baz = Baz()
         print("\(baz)")
         baz.doSomething()

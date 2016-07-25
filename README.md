@@ -1,6 +1,6 @@
 ##Frameworking
 *A collection of different types of iOS frameworks*
-
+*Note all the code in the framework belong to their corresponding party*
 
 ###Embedded Frameworks
 *Branding Framework*
@@ -9,12 +9,25 @@
 *Mixed-Swift-Obc-Framework*
 [Tutorial Source](https://github.com/danieleggert/mixed-swift-objc-framework)
 
+*Dynamic Framework*
+[Tutorial Source](https://www.raywenderlich.com/126365/ios-frameworks-tutorial)
+
+
 ###Static Frameworks
+
+
+
+
 
 
 
 ###Apple Docs
 [Dynamic Libraries](https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/DynamicLibraries/100-Articles/OverviewOfDynamicLibraries.html#//apple_ref/doc/uid/TP40001873-SW1)
+
+
+
+
+
 
 
 ###Terminology
