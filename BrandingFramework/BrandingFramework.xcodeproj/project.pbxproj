@@ -23,7 +23,6 @@
 /* Begin PBXBuildFile section */
 		4E0F57991CDA3EFC009FE671 /* BrandingFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E0F57981CDA3EFC009FE671 /* BrandingFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E0F57A11CDA3F1F009FE671 /* Branding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0F57A01CDA3F1F009FE671 /* Branding.swift */; };
-		4E0F57A31CDA4146009FE671 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 4E0F57A21CDA4146009FE671 /* Notes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		4E0F57981CDA3EFC009FE671 /* BrandingFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrandingFramework.h; sourceTree = "<group>"; };
 		4E0F579A1CDA3EFC009FE671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E0F57A01CDA3F1F009FE671 /* Branding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Branding.swift; sourceTree = "<group>"; };
-		4E0F57A21CDA4146009FE671 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +46,6 @@
 		4E0F578B1CDA3EFC009FE671 = {
 			isa = PBXGroup;
 			children = (
-				4E0F57A21CDA4146009FE671 /* Notes */,
 				4E0F57A01CDA3F1F009FE671 /* Branding.swift */,
 				4E0F57971CDA3EFC009FE671 /* BrandingFramework */,
 				4E0F57961CDA3EFC009FE671 /* Products */,
@@ -144,7 +141,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E0F57A31CDA4146009FE671 /* Notes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +334,7 @@
 				4E0F579F1CDA3EFC009FE671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E0F57A51CDA43EC009FE671 /* Build configuration list for PBXAggregateTarget "Build Framework" */ = {
 			isa = XCConfigurationList;
@@ -346,6 +343,7 @@
 				4E0F57A71CDA43EC009FE671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

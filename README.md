@@ -13,21 +13,16 @@
 [Tutorial Source](https://www.raywenderlich.com/126365/ios-frameworks-tutorial)
 
 
-###Static Frameworks
 
-
-
-
+###Protocols inside Dynamic Library sending Messages to App 
+This Project shows a class inside a library can send messages (via Protocols) to a class in the main App
 
 
 
 ###Apple Docs
-[Dynamic Libraries](https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/DynamicLibraries/100-Articles/OverviewOfDynamicLibraries.html#//apple_ref/doc/uid/TP40001873-SW1)
+[Dynamic Libraries](https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/DynamicLibraries/000-Introduction/Introduction.html)
 
-
-
-
-
+[Build Setting Reference](https://developer.apple.com/library/mac/documentation/DeveloperTools/Reference/XcodeBuildSettingRef/1-Build_Setting_Reference/build_setting_ref.html#//apple_ref/doc/uid/TP40003931-CH3-SW159)
 
 
 ###Terminology
@@ -52,3 +47,17 @@
 * **Fat frameworks** contain compiled code for multiple architectures. Compiled code for an architecture within a framework is typically referred to as a “slice.” For example, if a framework had compiled code for just the two architectures used by the Simulator (i386 and x86_64), we would say it contained two slices.
 
 
+
+###Drawbacks of xcodebuild
+There are a few disadvantages with using the xcodebuild technique which must be weighed against the importance of building a subproject with a different configuration.
+
+1. Warnings in the subproject will not show up consistently.
+This is a big one. For a clean build of the subproject, all warnings will show up in the Xcode warnings tab. In certain scenarios, building again will make these warnings disappear, and only warnings from the files that changed since the last build will show up. For this reason, I would only recommend using this technique when testing particular configurations, and not during regular debugging, as it can be easy to lose track of outstanding warnings in the subproject.
+
+2. Cleaning the parent project will not clean the subproject.
+
+3. It can potentially be confusing when working with a team.
+Since this is not a “standard” Xcode workflow, anyone else working on the project may have questions (and/or stern words) for you as to what is going on in the build settings.
+
+4. Not CI-friendly.
+Since cleaning the parent project does not clean the subproject, this technique is not very CI-friendly. Practically anything can be done with careful scripting, but depending on how important it is that you build the subproject with multiple configurations, it may or may not be worth the extra effort.
