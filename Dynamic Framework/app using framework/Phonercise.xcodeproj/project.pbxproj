@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AFC805C1C68343C00BD26FA /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFC80521C68343C00BD26FA /* ActionViewController.swift */; };
+		4C8F765B1C681D8F000A64EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8F765A1C681D8F000A64EB /* AppDelegate.swift */; };
+		4C8F76601C681D8F000A64EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F765E1C681D8F000A64EB /* Main.storyboard */; };
+		4C8F76621C681D8F000A64EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F76611C681D8F000A64EB /* Assets.xcassets */; };
+		4C8F76651C681D8F000A64EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F76631C681D8F000A64EB /* LaunchScreen.storyboard */; };
+		4C8F76701C681D8F000A64EB /* PhonerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8F766F1C681D8F000A64EB /* PhonerciseTests.swift */; };
+		F759928B1D36E84E00CC01F4 /* ThreeRingControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75992881D36E80D00CC01F4 /* ThreeRingControl.framework */; };
+		F759928C1D36E84E00CC01F4 /* ThreeRingControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F75992881D36E80D00CC01F4 /* ThreeRingControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C8F766C1C681D8F000A64EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C8F764F1C681D8F000A64EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C8F76561C681D8F000A64EB;
+			remoteInfo = Phonercise;
+		};
+		F75992871D36E80D00CC01F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F75992821D36E80D00CC01F4 /* ThreeRingControl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F71674321D36E576003E1AA9;
+			remoteInfo = ThreeRingControl;
+		};
+		F75992891D36E80D00CC01F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F75992821D36E80D00CC01F4 /* ThreeRingControl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F716743C1D36E576003E1AA9;
+			remoteInfo = ThreeRingControlTests;
+		};
+		F759928D1D36E84E00CC01F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F75992821D36E80D00CC01F4 /* ThreeRingControl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F71674311D36E576003E1AA9;
+			remoteInfo = ThreeRingControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F759928F1D36E84E00CC01F4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F759928C1D36E84E00CC01F4 /* ThreeRingControl.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1AFC80521C68343C00BD26FA /* ActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		4C8F76571C681D8F000A64EB /* Phonercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phonercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C8F765A1C681D8F000A64EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C8F765F1C681D8F000A64EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C8F76611C681D8F000A64EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C8F76641C681D8F000A64EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C8F76661C681D8F000A64EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C8F766B1C681D8F000A64EB /* PhonerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C8F766F1C681D8F000A64EB /* PhonerciseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonerciseTests.swift; sourceTree = "<group>"; };
+		4C8F76711C681D8F000A64EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F75992821D36E80D00CC01F4 /* ThreeRingControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ThreeRingControl.xcodeproj; path = ../framework/ThreeRingControl.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C8F76541C681D8F000A64EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F759928B1D36E84E00CC01F4 /* ThreeRingControl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C8F76681C681D8F000A64EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AFC80661C68347E00BD26FA /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C8F76611C681D8F000A64EB /* Assets.xcassets */,
+				4C8F76631C681D8F000A64EB /* LaunchScreen.storyboard */,
+				4C8F76661C681D8F000A64EB /* Info.plist */,
+			);
+			name = "Helper Files";
+			sourceTree = "<group>";
+		};
+		4C8F764E1C681D8F000A64EB = {
+			isa = PBXGroup;
+			children = (
+				F75992821D36E80D00CC01F4 /* ThreeRingControl.xcodeproj */,
+				4C8F76591C681D8F000A64EB /* Phonercise */,
+				4C8F766E1C681D8F000A64EB /* PhonerciseTests */,
+				4C8F76581C681D8F000A64EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C8F76581C681D8F000A64EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C8F76571C681D8F000A64EB /* Phonercise.app */,
+				4C8F766B1C681D8F000A64EB /* PhonerciseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C8F76591C681D8F000A64EB /* Phonercise */ = {
+			isa = PBXGroup;
+			children = (
+				4C8F765A1C681D8F000A64EB /* AppDelegate.swift */,
+				1AFC80521C68343C00BD26FA /* ActionViewController.swift */,
+				4C8F765E1C681D8F000A64EB /* Main.storyboard */,
+				1AFC80661C68347E00BD26FA /* Helper Files */,
+			);
+			path = Phonercise;
+			sourceTree = "<group>";
+		};
+		4C8F766E1C681D8F000A64EB /* PhonerciseTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C8F766F1C681D8F000A64EB /* PhonerciseTests.swift */,
+				4C8F76711C681D8F000A64EB /* Info.plist */,
+			);
+			path = PhonerciseTests;
+			sourceTree = "<group>";
+		};
+		F75992831D36E80D00CC01F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F75992881D36E80D00CC01F4 /* ThreeRingControl.framework */,
+				F759928A1D36E80D00CC01F4 /* ThreeRingControlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C8F76561C681D8F000A64EB /* Phonercise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C8F76741C681D8F000A64EB /* Build configuration list for PBXNativeTarget "Phonercise" */;
+			buildPhases = (
+				4C8F76531C681D8F000A64EB /* Sources */,
+				4C8F76541C681D8F000A64EB /* Frameworks */,
+				4C8F76551C681D8F000A64EB /* Resources */,
+				F759928F1D36E84E00CC01F4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F759928E1D36E84E00CC01F4 /* PBXTargetDependency */,
+			);
+			name = Phonercise;
+			productName = Phonercise;
+			productReference = 4C8F76571C681D8F000A64EB /* Phonercise.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C8F766A1C681D8F000A64EB /* PhonerciseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C8F76771C681D8F000A64EB /* Build configuration list for PBXNativeTarget "PhonerciseTests" */;
+			buildPhases = (
+				4C8F76671C681D8F000A64EB /* Sources */,
+				4C8F76681C681D8F000A64EB /* Frameworks */,
+				4C8F76691C681D8F000A64EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C8F766D1C681D8F000A64EB /* PBXTargetDependency */,
+			);
+			name = PhonerciseTests;
+			productName = PhonerciseTests;
+			productReference = 4C8F766B1C681D8F000A64EB /* PhonerciseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C8F764F1C681D8F000A64EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = raywenderlich;
+				TargetAttributes = {
+					4C8F76561C681D8F000A64EB = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Y24U4BPF65;
+						DevelopmentTeamName = "Luis Castillo (Personal Team)";
+						LastSwiftMigration = 0800;
+					};
+					4C8F766A1C681D8F000A64EB = {
+						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = 4C8F76561C681D8F000A64EB;
+					};
+				};
+			};
+			buildConfigurationList = 4C8F76521C681D8F000A64EB /* Build configuration list for PBXProject "Phonercise" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C8F764E1C681D8F000A64EB;
+			productRefGroup = 4C8F76581C681D8F000A64EB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F75992831D36E80D00CC01F4 /* Products */;
+					ProjectRef = F75992821D36E80D00CC01F4 /* ThreeRingControl.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				4C8F76561C681D8F000A64EB /* Phonercise */,
+				4C8F766A1C681D8F000A64EB /* PhonerciseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F75992881D36E80D00CC01F4 /* ThreeRingControl.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ThreeRingControl.framework;
+			remoteRef = F75992871D36E80D00CC01F4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F759928A1D36E80D00CC01F4 /* ThreeRingControlTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ThreeRingControlTests.xctest;
+			remoteRef = F75992891D36E80D00CC01F4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C8F76551C681D8F000A64EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8F76651C681D8F000A64EB /* LaunchScreen.storyboard in Resources */,
+				4C8F76621C681D8F000A64EB /* Assets.xcassets in Resources */,
+				4C8F76601C681D8F000A64EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C8F76691C681D8F000A64EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C8F76531C681D8F000A64EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8F765B1C681D8F000A64EB /* AppDelegate.swift in Sources */,
+				1AFC805C1C68343C00BD26FA /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C8F76671C681D8F000A64EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8F76701C681D8F000A64EB /* PhonerciseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C8F766D1C681D8F000A64EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C8F76561C681D8F000A64EB /* Phonercise */;
+			targetProxy = 4C8F766C1C681D8F000A64EB /* PBXContainerItemProxy */;
+		};
+		F759928E1D36E84E00CC01F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ThreeRingControl;
+			targetProxy = F759928D1D36E84E00CC01F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C8F765E1C681D8F000A64EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C8F765F1C681D8F000A64EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C8F76631C681D8F000A64EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C8F76641C681D8F000A64EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C8F76721C681D8F000A64EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C8F76731C681D8F000A64EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C8F76751C681D8F000A64EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Phonercise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lc.Phonercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4C8F76761C681D8F000A64EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Phonercise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lc.Phonercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4C8F76781C681D8F000A64EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PhonerciseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.PhonerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phonercise.app/Phonercise";
+			};
+			name = Debug;
+		};
+		4C8F76791C681D8F000A64EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PhonerciseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.PhonerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phonercise.app/Phonercise";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C8F76521C681D8F000A64EB /* Build configuration list for PBXProject "Phonercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C8F76721C681D8F000A64EB /* Debug */,
+				4C8F76731C681D8F000A64EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C8F76741C681D8F000A64EB /* Build configuration list for PBXNativeTarget "Phonercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C8F76751C681D8F000A64EB /* Debug */,
+				4C8F76761C681D8F000A64EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C8F76771C681D8F000A64EB /* Build configuration list for PBXNativeTarget "PhonerciseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C8F76781C681D8F000A64EB /* Debug */,
+				4C8F76791C681D8F000A64EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C8F764F1C681D8F000A64EB /* Project object */;
+}
