@@ -9,7 +9,8 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Build Framework.xcscheme</key>
+
+		<key>GSPAN.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
@@ -23,6 +24,16 @@
 			<true/>
 		</dict>
 		<key>4E0F57A41CDA43EC009FE671</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D0FCAC391CDC413000260864</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D0FCAC421CDC413000260864</key>
 		<dict>
 			<key>primary</key>
 			<true/>

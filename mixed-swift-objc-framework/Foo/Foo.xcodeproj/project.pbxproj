@@ -96,7 +96,7 @@
 				3E8CDBE51A605F69001A88DE /* Norf.h */,
 				3E8CDBE61A605F69001A88DE /* Norf.m */,
 				3E26E0801A64091B00E02FD8 /* Foo.private.modulemap */,
-				3E8CDBE91A606007001A88DE /* FooPrivates */,
+				3E8CDBE91A606007001A88DE /* FooPrivate */,
 				3E8CDBC41A605E10001A88DE /* Supporting Files */,
 			);
 			path = Foo;
@@ -127,12 +127,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3E8CDBE91A606007001A88DE /* FooPrivates */ = {
+		3E8CDBE91A606007001A88DE /* FooPrivate */ = {
 			isa = PBXGroup;
 			children = (
 				3E8CDBEA1A606033001A88DE /* module.modulemap */,
 			);
-			name = FooPrivates;
 			path = FooPrivate;
 			sourceTree = "<group>";
 		};
@@ -279,7 +278,6 @@
 			baseConfigurationReference = 3E8CDC281A60648B001A88DE /* Foo.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -314,7 +312,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = "";
+				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -327,7 +325,6 @@
 			baseConfigurationReference = 3E8CDC281A60648B001A88DE /* Foo.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -355,7 +352,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = "";
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
