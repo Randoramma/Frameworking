@@ -10,19 +10,19 @@ import Foundation
 
 
 @objc public protocol HelloDelegate {
-    func HelloResponder_message(message:NSString)
+    func HelloResponder_message(_ message:NSString)
 }
 
 
-@objc public class HelloClass:NSObject {
+@objc open class HelloClass:NSObject {
     
     
-    public var delegate:HelloDelegate?
+    open var delegate:HelloDelegate?
     
-    public func sendMeAMessage()
+    open func sendMeAMessage()
     {
         let message = "Message from Dynamic Framework"
-        delegate?.HelloResponder_message(message)
+        delegate?.HelloResponder_message(message as NSString)
     }//eom
     
 }//eoc
