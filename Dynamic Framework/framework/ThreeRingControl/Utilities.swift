@@ -79,7 +79,7 @@ func rotationForLayer(_ layer: CALayer, byAngle angle: CGFloat) -> CAKeyframeAni
     values.append(angle / CGFloat(numberOfKeyFrames) * CGFloat(i) + currentAngle)
   }
   
-  animation.keyTimes = times
+  animation.keyTimes = times as [NSNumber]?
   animation.values = values
   
   return animation

@@ -24,25 +24,25 @@
 import Foundation
 import AVFoundation
 
-public class Fanfare {
-  public var ringSound = "coin07"
-  public var allRingSound = "winning"
+open class Fanfare {
+  open var ringSound = "coin07"
+  open var allRingSound = "winning"
 
-  public static let sharedInstance = Fanfare()
+  open static let sharedInstance = Fanfare()
 
-  private var player: AVAudioPlayer?
+  fileprivate var player: AVAudioPlayer?
 
-  public func playSoundsWhenReady() {
-    NotificationCenter.default().addObserver(forName: NSNotification.Name(rawValue: RingCompletedNotification), object: nil, queue: OperationQueue.main()) { _ in
+  open func playSoundsWhenReady() {
+    NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: RingCompletedNotification), object: nil, queue: OperationQueue.main) { _ in
       self.playSound(self.ringSound)
     }
-    NotificationCenter.default().addObserver(forName: NSNotification.Name(rawValue: AllRingsCompletedNotification), object: nil, queue: OperationQueue.main()) { _ in
+    NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: AllRingsCompletedNotification), object: nil, queue: OperationQueue.main) { _ in
       self.playSound(self.allRingSound)
     }
   }
 
   private func playSound(_ sound: String) {
-    if let url = Bundle(for: self.dynamicType).urlForResource(sound, withExtension: "mp3") {
+    if let url = Bundle(for: type(of: self)).url(forResource: sound, withExtension: "mp3") {
       player = try? AVAudioPlayer(contentsOf: url)
       if player != nil {
         player!.numberOfLoops = 0
@@ -53,6 +53,6 @@ public class Fanfare {
   }
 
   deinit {
-    NotificationCenter.default().removeObserver(self)
+    NotificationCenter.default.removeObserver(self)
   }
 }

@@ -14,7 +14,7 @@ import Foundation
 extension UIColor {
     
     public class func brandedColor() -> UIColor {
-        return UIColor.magentaColor()
+        return UIColor.magenta
     }
     
 }

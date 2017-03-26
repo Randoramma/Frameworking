@@ -24,14 +24,14 @@ import UIKit
 
 class RingLayer : CALayer {
 
-  private let angleOffsetForZero = CGFloat(-M_PI_2)
-  private lazy var gradientLayer : CircularGradientLayer = {
+  fileprivate let angleOffsetForZero = CGFloat(-M_PI_2)
+  fileprivate lazy var gradientLayer : CircularGradientLayer = {
     let gradLayer = CircularGradientLayer()
     gradLayer.colors = self.ringColors
     return gradLayer
   }()
 
-  private lazy var backgroundLayer : CAShapeLayer = {
+  fileprivate lazy var backgroundLayer : CAShapeLayer = {
     let layer = CAShapeLayer()
     layer.strokeColor = self.ringBackgroundColor
     layer.lineWidth = self.ringWidth
@@ -39,24 +39,24 @@ class RingLayer : CALayer {
     return layer
   }()
 
-  private lazy var foregroundLayer : CALayer = {
+  fileprivate lazy var foregroundLayer : CALayer = {
     let layer = CALayer()
     layer.addSublayer(self.gradientLayer)
     layer.mask = self.foregroundMask
     return layer
   }()
 
-  private lazy var ringTipLayer : RingTip = {
+  fileprivate lazy var ringTipLayer : RingTip = {
     let layer = RingTip()
     layer.color = self.ringColors.0
     layer.ringWidth = self.ringWidth
     return layer
   }()
 
-  private lazy var foregroundMask : CAShapeLayer = {
+  fileprivate lazy var foregroundMask : CAShapeLayer = {
     let layer = CAShapeLayer()
-    layer.strokeColor = UIColor.black().cgColor
-    layer.fillColor = UIColor.clear().cgColor
+    layer.strokeColor = UIColor.black.cgColor
+    layer.fillColor = UIColor.clear.cgColor
     layer.lineWidth = self.ringWidth
     layer.lineCap = kCALineCapRound
     return layer
@@ -72,7 +72,7 @@ class RingLayer : CALayer {
       preparePaths()
     }
   }
-  private var _value: CGFloat = 0.0
+  fileprivate var _value: CGFloat = 0.0
   var value: CGFloat {
     get {
       return _value
@@ -81,13 +81,13 @@ class RingLayer : CALayer {
       setValue(newValue, animated: false)
     }
   }
-  var ringColors: (CGColor, CGColor) = (UIColor.red().cgColor, UIColor.red().darkerColor.cgColor) {
+  var ringColors: (CGColor, CGColor) = (UIColor.red.cgColor, UIColor.red.darkerColor.cgColor) {
     didSet {
       gradientLayer.colors = ringColors
       ringTipLayer.color = ringColors.0
     }
   }
-  var ringBackgroundColor: CGColor = UIColor.darkGray().cgColor {
+  var ringBackgroundColor: CGColor = UIColor.darkGray.cgColor {
     didSet {
       backgroundLayer.strokeColor = ringBackgroundColor
     }
@@ -104,7 +104,7 @@ class RingLayer : CALayer {
     sharedInitialization()
   }
 
-  override init(layer: AnyObject) {
+  override init(layer: Any) {
     super.init(layer: layer)
     if let layer = layer as? RingLayer {
       ringWidth = layer.ringWidth
@@ -116,8 +116,8 @@ class RingLayer : CALayer {
 }
 
 extension RingLayer {
-  private func sharedInitialization() {
-    backgroundColor = UIColor.black().cgColor
+  fileprivate func sharedInitialization() {
+    backgroundColor = UIColor.black.cgColor
     [backgroundLayer, foregroundLayer, ringTipLayer].forEach { self.addSublayer($0) }
     self.value = 0.8
   }
@@ -135,24 +135,24 @@ extension RingLayer {
 }
 
 extension RingLayer {
-  private var radius : CGFloat {
+  fileprivate var radius : CGFloat {
     return (min(bounds.width, bounds.height) - ringWidth) / 2.0
   }
 
-  private func preparePaths() {
+  fileprivate func preparePaths() {
     backgroundLayer.path = backgroundPath
     foregroundMask.path = maskPathForValue(value)
   }
 
-  private var backgroundPath : CGPath {
+  fileprivate var backgroundPath : CGPath {
     return UIBezierPath(arcCenter: center, radius: radius, startAngle: 0, endAngle: 2 * CGFloat(M_PI), clockwise: true).cgPath
   }
 
-  private func maskPathForValue(_ value: CGFloat) -> CGPath {
+  fileprivate func maskPathForValue(_ value: CGFloat) -> CGPath {
     return UIBezierPath(arcCenter: center, radius: radius, startAngle: angleOffsetForZero, endAngle: angleForValue(value), clockwise: true).cgPath
   }
 
-  private func angleForValue(_ value: CGFloat) -> CGFloat {
+  fileprivate func angleForValue(_ value: CGFloat) -> CGFloat {
     return value * 2 * CGFloat(M_PI) + angleOffsetForZero
   }
 }
@@ -173,7 +173,7 @@ extension RingLayer {
     _value = value
   }
 
-  private func animateFromValue(_ fromValue: CGFloat, toValue: CGFloat) {
+  fileprivate func animateFromValue(_ fromValue: CGFloat, toValue: CGFloat) {
     let angleDelta = (toValue - fromValue) * 2.0 * CGFloat(M_PI)
     if abs(angleDelta) < 0.001 {
       return

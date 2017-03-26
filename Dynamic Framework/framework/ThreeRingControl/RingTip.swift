@@ -25,18 +25,18 @@ import UIKit
 class RingTip : CALayer {
   
   //MARK:- Constituent Layers
-  private lazy var tipLayer : CAShapeLayer = {
+  fileprivate lazy var tipLayer : CAShapeLayer = {
     let layer = CAShapeLayer()
     layer.lineCap = kCALineCapRound
     layer.lineWidth = self.ringWidth
     return layer
     }()
   
-  private lazy var shadowLayer : CAShapeLayer = {
+  fileprivate lazy var shadowLayer : CAShapeLayer = {
     let layer = CAShapeLayer()
     layer.lineCap = kCALineCapRound
-    layer.strokeColor = UIColor.black().cgColor
-    layer.shadowColor = UIColor.black().cgColor
+    layer.strokeColor = UIColor.black.cgColor
+    layer.shadowColor = UIColor.black.cgColor
     layer.shadowOffset = .zero
     layer.shadowRadius = 12.0
     layer.shadowOpacity = 1.0
@@ -44,28 +44,28 @@ class RingTip : CALayer {
     return layer
     }()
   
-  private lazy var shadowMaskLayer : CAShapeLayer = {
+  fileprivate lazy var shadowMaskLayer : CAShapeLayer = {
     let layer = CAShapeLayer()
-    layer.strokeColor = UIColor.black().cgColor
+    layer.strokeColor = UIColor.black.cgColor
     layer.lineCap = kCALineCapButt
     return layer
     }()
   
   //MARK:- Utility Properties
-  private var radius : CGFloat {
+  fileprivate var radius : CGFloat {
     return (min(bounds.width, bounds.height) - ringWidth) / 2.0
   }
   
-  private var tipPath : CGPath {
+  fileprivate var tipPath : CGPath {
     return UIBezierPath(arcCenter: center, radius: radius, startAngle: -0.01, endAngle: 0, clockwise: true).cgPath
   }
   
-  private var shadowMaskPath : CGPath {
+  fileprivate var shadowMaskPath : CGPath {
     return UIBezierPath(arcCenter: center, radius: radius, startAngle: 0, endAngle: CGFloat(M_PI_2), clockwise: true).cgPath
   }
   
   //MARK:- API Properties
-  var color: CGColor = UIColor.red().cgColor {
+  var color: CGColor = UIColor.red.cgColor {
     didSet {
       tipLayer.strokeColor = color
     }
@@ -91,7 +91,7 @@ class RingTip : CALayer {
     sharedInitialisation()
   }
   
-  override init(layer: AnyObject) {
+  override init(layer: Any) {
     super.init(layer: layer)
     if let layer = layer as? RingTip {
       color = layer.color
@@ -100,10 +100,10 @@ class RingTip : CALayer {
   }
   
   
-  private func sharedInitialisation() {
+  fileprivate func sharedInitialisation() {
     addSublayer(shadowLayer)
     addSublayer(tipLayer)
-    color = UIColor.red().cgColor
+    color = UIColor.red.cgColor
     preparePaths()
   }
   
@@ -117,7 +117,7 @@ class RingTip : CALayer {
   }
   
   //MARK:- Utility methods
-  private func preparePaths() {
+  fileprivate func preparePaths() {
     tipLayer.path = tipPath
     shadowLayer.path = tipPath
     shadowMaskLayer.path = shadowMaskPath
