@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EB4E39F94418F045110F207CD77C5D4CCFBA143F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EB4E39F94418F045110F207CD77C5D4CCFBA143F" : 9223372036854775807,
+    "5878E8019B1276EFFE4C0D2CFEB811E45FB815B3" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "60BFC41D-C1E2-4FA9-8C30-DFDE3A148E11",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EB4E39F94418F045110F207CD77C5D4CCFBA143F" : "mixed-swift-objc-framework\/",
+    "5878E8019B1276EFFE4C0D2CFEB811E45FB815B3" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Foo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Foo\/Foo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Randoramma\/Frameworking.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5878E8019B1276EFFE4C0D2CFEB811E45FB815B3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Randoramma\/mixed-swift-objc-framework.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EB4E39F94418F045110F207CD77C5D4CCFBA143F"
+    }
+  ]
+}
