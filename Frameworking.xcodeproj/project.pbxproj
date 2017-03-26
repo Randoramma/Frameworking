@@ -7,20 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D0FCAC0B1CDC376000260864 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FCAC0A1CDC376000260864 /* main.m */; };
-		D0FCAC0E1CDC376000260864 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FCAC0D1CDC376000260864 /* AppDelegate.m */; };
+		D0DCBDD01D85A4F7003FF4EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDCF1D85A4F7003FF4EE /* AppDelegate.m */; };
+		D0DCBDD41D85A548003FF4EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0DCBDD31D85A548003FF4EE /* Assets.xcassets */; };
+		D0DCBDD61D85A55A003FF4EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDD51D85A55A003FF4EE /* main.m */; };
+		D0DCBDD81D85A762003FF4EE /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D0DCBDD71D85A762003FF4EE /* Base.lproj */; };
+		D0DCBDF81D85AC3B003FF4EE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDD91D85AC3B003FF4EE /* Constants.swift */; };
+		D0DCBDF91D85AC3B003FF4EE /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDDA1D85AC3B003FF4EE /* DateFormatter.swift */; };
+		D0DCBDFA1D85AC3B003FF4EE /* GSPAN_Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDDB1D85AC3B003FF4EE /* GSPAN_Model.xcdatamodeld */; };
+		D0DCBDFB1D85AC3B003FF4EE /* GSPAN.h in Headers */ = {isa = PBXBuildFile; fileRef = D0DCBDDD1D85AC3B003FF4EE /* GSPAN.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0DCBDFC1D85AC3B003FF4EE /* GSPANPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDDF1D85AC3B003FF4EE /* GSPANPersistence.swift */; };
+		D0DCBDFD1D85AC3B003FF4EE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0DCBDE01D85AC3B003FF4EE /* Info.plist */; };
+		D0DCBDFE1D85AC3B003FF4EE /* Jawbone.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0DCBDE11D85AC3B003FF4EE /* Jawbone.plist */; };
+		D0DCBDFF1D85AC3B003FF4EE /* json.data in Resources */ = {isa = PBXBuildFile; fileRef = D0DCBDE21D85AC3B003FF4EE /* json.data */; };
+		D0DCBE001D85AC3B003FF4EE /* nsdateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDE31D85AC3B003FF4EE /* nsdateExtension.swift */; };
+		D0DCBE011D85AC3B003FF4EE /* Oauth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDE41D85AC3B003FF4EE /* Oauth.swift */; };
+		D0DCBE021D85AC3B003FF4EE /* OAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDE51D85AC3B003FF4EE /* OAuthToken.swift */; };
+		D0DCBE031D85AC3B003FF4EE /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDE61D85AC3B003FF4EE /* Parser.swift */; };
+		D0DCBE041D85AC3B003FF4EE /* PersistentOAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDE71D85AC3B003FF4EE /* PersistentOAuthToken.swift */; };
+		D0DCBE051D85AC3B003FF4EE /* PersistentOAuthToken+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDE81D85AC3B003FF4EE /* PersistentOAuthToken+CoreDataProperties.swift */; };
+		D0DCBE061D85AC3B003FF4EE /* PersistentRestDataEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDE91D85AC3B003FF4EE /* PersistentRestDataEndpoint.swift */; };
+		D0DCBE071D85AC3B003FF4EE /* PersistentRestDataEndpoint+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDEA1D85AC3B003FF4EE /* PersistentRestDataEndpoint+CoreDataProperties.swift */; };
+		D0DCBE081D85AC3B003FF4EE /* PersistentRestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDEB1D85AC3B003FF4EE /* PersistentRestModel.swift */; };
+		D0DCBE091D85AC3B003FF4EE /* PersistentRestModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDEC1D85AC3B003FF4EE /* PersistentRestModel+CoreDataProperties.swift */; };
+		D0DCBE0A1D85AC3B003FF4EE /* Responders.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDED1D85AC3B003FF4EE /* Responders.swift */; };
+		D0DCBE0B1D85AC3B003FF4EE /* RestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDEE1D85AC3B003FF4EE /* RestController.swift */; };
+		D0DCBE0C1D85AC3B003FF4EE /* RestDataEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDEF1D85AC3B003FF4EE /* RestDataEndpoint.swift */; };
+		D0DCBE0D1D85AC3B003FF4EE /* RestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDF01D85AC3B003FF4EE /* RestModel.swift */; };
+		D0DCBE0E1D85AC3B003FF4EE /* RestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDF11D85AC3B003FF4EE /* RestService.swift */; };
+		D0DCBE0F1D85AC3B003FF4EE /* SafariAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDF21D85AC3B003FF4EE /* SafariAuth.swift */; };
+		D0DCBE101D85AC3B003FF4EE /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDF31D85AC3B003FF4EE /* URLSessionDataTaskProtocol.swift */; };
+		D0DCBE111D85AC3B003FF4EE /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDF41D85AC3B003FF4EE /* URLSessionProtocol.swift */; };
+		D0DCBE121D85AC3B003FF4EE /* WebAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDF51D85AC3B003FF4EE /* WebAuthVC.swift */; };
+		D0DCBE131D85AC3B003FF4EE /* WebAuthVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0DCBDF61D85AC3B003FF4EE /* WebAuthVC.xib */; };
+		D0DCBE141D85AC3B003FF4EE /* WebViewAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBDF71D85AC3B003FF4EE /* WebViewAuth.swift */; };
+		D0DCBE1B1D87AFE8003FF4EE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DCBE1A1D87AFE8003FF4EE /* CoreData.framework */; };
+		D0DCBE1D1D87B076003FF4EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DCBE1C1D87B076003FF4EE /* Foundation.framework */; };
+		D0DCBE1F1D87B07D003FF4EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DCBE1E1D87B07D003FF4EE /* CoreGraphics.framework */; };
+		D0DCBE211D87B08E003FF4EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DCBE201D87B08E003FF4EE /* UIKit.framework */; };
+		D0DCBE241D87B1C3003FF4EE /* ImportOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBE231D87B1C3003FF4EE /* ImportOperation.m */; };
 		D0FCAC111CDC376000260864 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FCAC101CDC376000260864 /* ViewController.m */; };
 		D0FCAC141CDC376000260864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0FCAC121CDC376000260864 /* Main.storyboard */; };
-		D0FCAC161CDC376000260864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FCAC151CDC376000260864 /* Assets.xcassets */; };
 		D0FCAC191CDC376000260864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0FCAC171CDC376000260864 /* LaunchScreen.storyboard */; };
 		D0FCAC241CDC376000260864 /* FrameworkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FCAC231CDC376000260864 /* FrameworkingTests.m */; };
 		D0FCAC341CDC40FC00260864 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = D0FCAC331CDC40FC00260864 /* Notes */; };
-		D0FCAC3D1CDC413000260864 /* GSPAN.h in Headers */ = {isa = PBXBuildFile; fileRef = D0FCAC3C1CDC413000260864 /* GSPAN.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0FCAC441CDC413000260864 /* GSPAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FCAC3A1CDC413000260864 /* GSPAN.framework */; };
 		D0FCAC4B1CDC413000260864 /* GSPANTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FCAC4A1CDC413000260864 /* GSPANTests.swift */; };
 		D0FCAC4F1CDC413000260864 /* GSPAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FCAC3A1CDC413000260864 /* GSPAN.framework */; };
 		D0FCAC501CDC413000260864 /* GSPAN.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0FCAC3A1CDC413000260864 /* GSPAN.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D0FCAC591CDC414A00260864 /* RestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FCAC581CDC414A00260864 /* RestController.swift */; };
 		D0FCAC5C1CDC42B500260864 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FCAC5B1CDC42B500260864 /* Test.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,27 +103,64 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D0DCBDCE1D85A4F7003FF4EE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D0DCBDCF1D85A4F7003FF4EE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D0DCBDD11D85A53F003FF4EE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0DCBDD31D85A548003FF4EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0DCBDD51D85A55A003FF4EE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0DCBDD71D85A762003FF4EE /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
+		D0DCBDD91D85AC3B003FF4EE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D0DCBDDA1D85AC3B003FF4EE /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		D0DCBDDC1D85AC3B003FF4EE /* GSPAN_Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GSPAN_Model.xcdatamodel; sourceTree = "<group>"; };
+		D0DCBDDD1D85AC3B003FF4EE /* GSPAN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSPAN.h; sourceTree = "<group>"; };
+		D0DCBDDE1D85AC3B003FF4EE /* GSPAN.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = GSPAN.modulemap; sourceTree = "<group>"; };
+		D0DCBDDF1D85AC3B003FF4EE /* GSPANPersistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSPANPersistence.swift; sourceTree = "<group>"; };
+		D0DCBDE01D85AC3B003FF4EE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0DCBDE11D85AC3B003FF4EE /* Jawbone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Jawbone.plist; sourceTree = "<group>"; };
+		D0DCBDE21D85AC3B003FF4EE /* json.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json.data; sourceTree = "<group>"; };
+		D0DCBDE31D85AC3B003FF4EE /* nsdateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = nsdateExtension.swift; sourceTree = "<group>"; };
+		D0DCBDE41D85AC3B003FF4EE /* Oauth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Oauth.swift; sourceTree = "<group>"; };
+		D0DCBDE51D85AC3B003FF4EE /* OAuthToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthToken.swift; sourceTree = "<group>"; };
+		D0DCBDE61D85AC3B003FF4EE /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		D0DCBDE71D85AC3B003FF4EE /* PersistentOAuthToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentOAuthToken.swift; sourceTree = "<group>"; };
+		D0DCBDE81D85AC3B003FF4EE /* PersistentOAuthToken+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PersistentOAuthToken+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D0DCBDE91D85AC3B003FF4EE /* PersistentRestDataEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentRestDataEndpoint.swift; sourceTree = "<group>"; };
+		D0DCBDEA1D85AC3B003FF4EE /* PersistentRestDataEndpoint+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PersistentRestDataEndpoint+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D0DCBDEB1D85AC3B003FF4EE /* PersistentRestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentRestModel.swift; sourceTree = "<group>"; };
+		D0DCBDEC1D85AC3B003FF4EE /* PersistentRestModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PersistentRestModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D0DCBDED1D85AC3B003FF4EE /* Responders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responders.swift; sourceTree = "<group>"; };
+		D0DCBDEE1D85AC3B003FF4EE /* RestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestController.swift; sourceTree = "<group>"; };
+		D0DCBDEF1D85AC3B003FF4EE /* RestDataEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestDataEndpoint.swift; sourceTree = "<group>"; };
+		D0DCBDF01D85AC3B003FF4EE /* RestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestModel.swift; sourceTree = "<group>"; };
+		D0DCBDF11D85AC3B003FF4EE /* RestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestService.swift; sourceTree = "<group>"; };
+		D0DCBDF21D85AC3B003FF4EE /* SafariAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariAuth.swift; sourceTree = "<group>"; };
+		D0DCBDF31D85AC3B003FF4EE /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
+		D0DCBDF41D85AC3B003FF4EE /* URLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		D0DCBDF51D85AC3B003FF4EE /* WebAuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAuthVC.swift; sourceTree = "<group>"; };
+		D0DCBDF61D85AC3B003FF4EE /* WebAuthVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebAuthVC.xib; sourceTree = "<group>"; };
+		D0DCBDF71D85AC3B003FF4EE /* WebViewAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewAuth.swift; sourceTree = "<group>"; };
+		D0DCBE191D87AE0C003FF4EE /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
+		D0DCBE1A1D87AFE8003FF4EE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D0DCBE1C1D87B076003FF4EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D0DCBE1E1D87B07D003FF4EE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D0DCBE201D87B08E003FF4EE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D0DCBE221D87B1C3003FF4EE /* ImportOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImportOperation.h; sourceTree = "<group>"; };
+		D0DCBE231D87B1C3003FF4EE /* ImportOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImportOperation.m; sourceTree = "<group>"; };
 		D0FCAC061CDC376000260864 /* Frameworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frameworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FCAC0A1CDC376000260864 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D0FCAC0C1CDC376000260864 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D0FCAC0D1CDC376000260864 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D0FCAC0F1CDC376000260864 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D0FCAC101CDC376000260864 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D0FCAC131CDC376000260864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D0FCAC151CDC376000260864 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0FCAC181CDC376000260864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D0FCAC1A1CDC376000260864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0FCAC1F1CDC376000260864 /* FrameworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FCAC231CDC376000260864 /* FrameworkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameworkingTests.m; sourceTree = "<group>"; };
 		D0FCAC251CDC376000260864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0FCAC331CDC40FC00260864 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 		D0FCAC3A1CDC413000260864 /* GSPAN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GSPAN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0FCAC3C1CDC413000260864 /* GSPAN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSPAN.h; sourceTree = "<group>"; };
 		D0FCAC3E1CDC413000260864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0FCAC431CDC413000260864 /* GSPANTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GSPANTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FCAC4A1CDC413000260864 /* GSPANTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSPANTests.swift; sourceTree = "<group>"; };
 		D0FCAC4C1CDC413000260864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0FCAC581CDC414A00260864 /* RestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestController.swift; sourceTree = "<group>"; };
 		D0FCAC5A1CDC42B500260864 /* Frameworking-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Frameworking-Bridging-Header.h"; sourceTree = "<group>"; };
 		D0FCAC5B1CDC42B500260864 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +170,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0DCBE211D87B08E003FF4EE /* UIKit.framework in Frameworks */,
+				D0DCBE1F1D87B07D003FF4EE /* CoreGraphics.framework in Frameworks */,
+				D0DCBE1D1D87B076003FF4EE /* Foundation.framework in Frameworks */,
+				D0DCBE1B1D87AFE8003FF4EE /* CoreData.framework in Frameworks */,
 				D0FCAC4F1CDC413000260864 /* GSPAN.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +211,10 @@
 				D0FCAC3B1CDC413000260864 /* GSPAN */,
 				D0FCAC491CDC413000260864 /* GSPANTests */,
 				D0FCAC071CDC376000260864 /* Products */,
+				D0DCBE201D87B08E003FF4EE /* UIKit.framework */,
+				D0DCBE1E1D87B07D003FF4EE /* CoreGraphics.framework */,
+				D0DCBE1C1D87B076003FF4EE /* Foundation.framework */,
+				D0DCBE1A1D87AFE8003FF4EE /* CoreData.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,18 +232,23 @@
 		D0FCAC081CDC376000260864 /* Frameworking */ = {
 			isa = PBXGroup;
 			children = (
-				D0FCAC0C1CDC376000260864 /* AppDelegate.h */,
-				D0FCAC0D1CDC376000260864 /* AppDelegate.m */,
+				D0DCBE191D87AE0C003FF4EE /* PrefixHeader.pch */,
+				D0DCBDCE1D85A4F7003FF4EE /* AppDelegate.h */,
+				D0DCBDCF1D85A4F7003FF4EE /* AppDelegate.m */,
 				D0FCAC0F1CDC376000260864 /* ViewController.h */,
 				D0FCAC101CDC376000260864 /* ViewController.m */,
+				D0DCBDD11D85A53F003FF4EE /* Info.plist */,
+				D0DCBDD51D85A55A003FF4EE /* main.m */,
+				D0DCBDD31D85A548003FF4EE /* Assets.xcassets */,
+				D0DCBDD71D85A762003FF4EE /* Base.lproj */,
 				D0FCAC121CDC376000260864 /* Main.storyboard */,
-				D0FCAC151CDC376000260864 /* Assets.xcassets */,
 				D0FCAC171CDC376000260864 /* LaunchScreen.storyboard */,
-				D0FCAC1A1CDC376000260864 /* Info.plist */,
 				D0FCAC091CDC376000260864 /* Supporting Files */,
 				D0FCAC331CDC40FC00260864 /* Notes */,
 				D0FCAC5B1CDC42B500260864 /* Test.swift */,
 				D0FCAC5A1CDC42B500260864 /* Frameworking-Bridging-Header.h */,
+				D0DCBE221D87B1C3003FF4EE /* ImportOperation.h */,
+				D0DCBE231D87B1C3003FF4EE /* ImportOperation.m */,
 			);
 			path = Frameworking;
 			sourceTree = "<group>";
@@ -190,9 +273,37 @@
 		D0FCAC3B1CDC413000260864 /* GSPAN */ = {
 			isa = PBXGroup;
 			children = (
-				D0FCAC3C1CDC413000260864 /* GSPAN.h */,
+				D0DCBDD91D85AC3B003FF4EE /* Constants.swift */,
+				D0DCBDDA1D85AC3B003FF4EE /* DateFormatter.swift */,
+				D0DCBDDB1D85AC3B003FF4EE /* GSPAN_Model.xcdatamodeld */,
+				D0DCBDDD1D85AC3B003FF4EE /* GSPAN.h */,
+				D0DCBDDE1D85AC3B003FF4EE /* GSPAN.modulemap */,
+				D0DCBDDF1D85AC3B003FF4EE /* GSPANPersistence.swift */,
+				D0DCBDE01D85AC3B003FF4EE /* Info.plist */,
+				D0DCBDE11D85AC3B003FF4EE /* Jawbone.plist */,
+				D0DCBDE21D85AC3B003FF4EE /* json.data */,
+				D0DCBDE31D85AC3B003FF4EE /* nsdateExtension.swift */,
+				D0DCBDE41D85AC3B003FF4EE /* Oauth.swift */,
+				D0DCBDE51D85AC3B003FF4EE /* OAuthToken.swift */,
+				D0DCBDE61D85AC3B003FF4EE /* Parser.swift */,
+				D0DCBDE71D85AC3B003FF4EE /* PersistentOAuthToken.swift */,
+				D0DCBDE81D85AC3B003FF4EE /* PersistentOAuthToken+CoreDataProperties.swift */,
+				D0DCBDE91D85AC3B003FF4EE /* PersistentRestDataEndpoint.swift */,
+				D0DCBDEA1D85AC3B003FF4EE /* PersistentRestDataEndpoint+CoreDataProperties.swift */,
+				D0DCBDEB1D85AC3B003FF4EE /* PersistentRestModel.swift */,
+				D0DCBDEC1D85AC3B003FF4EE /* PersistentRestModel+CoreDataProperties.swift */,
+				D0DCBDED1D85AC3B003FF4EE /* Responders.swift */,
+				D0DCBDEE1D85AC3B003FF4EE /* RestController.swift */,
+				D0DCBDEF1D85AC3B003FF4EE /* RestDataEndpoint.swift */,
+				D0DCBDF01D85AC3B003FF4EE /* RestModel.swift */,
+				D0DCBDF11D85AC3B003FF4EE /* RestService.swift */,
+				D0DCBDF21D85AC3B003FF4EE /* SafariAuth.swift */,
+				D0DCBDF31D85AC3B003FF4EE /* URLSessionDataTaskProtocol.swift */,
+				D0DCBDF41D85AC3B003FF4EE /* URLSessionProtocol.swift */,
+				D0DCBDF51D85AC3B003FF4EE /* WebAuthVC.swift */,
+				D0DCBDF61D85AC3B003FF4EE /* WebAuthVC.xib */,
+				D0DCBDF71D85AC3B003FF4EE /* WebViewAuth.swift */,
 				D0FCAC3E1CDC413000260864 /* Info.plist */,
-				D0FCAC581CDC414A00260864 /* RestController.swift */,
 			);
 			path = GSPAN;
 			sourceTree = "<group>";
@@ -213,7 +324,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0FCAC3D1CDC413000260864 /* GSPAN.h in Headers */,
+				D0DCBDFB1D85AC3B003FF4EE /* GSPAN.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +417,7 @@
 				TargetAttributes = {
 					D0FCAC051CDC376000260864 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 					};
 					D0FCAC1E1CDC376000260864 = {
 						CreatedOnToolsVersion = 7.3;
@@ -313,9 +425,11 @@
 					};
 					D0FCAC391CDC413000260864 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 					};
 					D0FCAC421CDC413000260864 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 						TestTargetID = D0FCAC051CDC376000260864;
 					};
 				};
@@ -347,9 +461,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0FCAC191CDC376000260864 /* LaunchScreen.storyboard in Resources */,
-				D0FCAC161CDC376000260864 /* Assets.xcassets in Resources */,
 				D0FCAC341CDC40FC00260864 /* Notes in Resources */,
+				D0DCBDD81D85A762003FF4EE /* Base.lproj in Resources */,
 				D0FCAC141CDC376000260864 /* Main.storyboard in Resources */,
+				D0DCBDD41D85A548003FF4EE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +479,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0DCBDFF1D85AC3B003FF4EE /* json.data in Resources */,
+				D0DCBDFD1D85AC3B003FF4EE /* Info.plist in Resources */,
+				D0DCBDFE1D85AC3B003FF4EE /* Jawbone.plist in Resources */,
+				D0DCBE131D85AC3B003FF4EE /* WebAuthVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,10 +500,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0DCBDD61D85A55A003FF4EE /* main.m in Sources */,
+				D0DCBE241D87B1C3003FF4EE /* ImportOperation.m in Sources */,
+				D0DCBDD01D85A4F7003FF4EE /* AppDelegate.m in Sources */,
 				D0FCAC111CDC376000260864 /* ViewController.m in Sources */,
 				D0FCAC5C1CDC42B500260864 /* Test.swift in Sources */,
-				D0FCAC0E1CDC376000260864 /* AppDelegate.m in Sources */,
-				D0FCAC0B1CDC376000260864 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +520,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0FCAC591CDC414A00260864 /* RestController.swift in Sources */,
+				D0DCBE0F1D85AC3B003FF4EE /* SafariAuth.swift in Sources */,
+				D0DCBE0C1D85AC3B003FF4EE /* RestDataEndpoint.swift in Sources */,
+				D0DCBE0A1D85AC3B003FF4EE /* Responders.swift in Sources */,
+				D0DCBDF91D85AC3B003FF4EE /* DateFormatter.swift in Sources */,
+				D0DCBE091D85AC3B003FF4EE /* PersistentRestModel+CoreDataProperties.swift in Sources */,
+				D0DCBDFA1D85AC3B003FF4EE /* GSPAN_Model.xcdatamodeld in Sources */,
+				D0DCBE001D85AC3B003FF4EE /* nsdateExtension.swift in Sources */,
+				D0DCBE011D85AC3B003FF4EE /* Oauth.swift in Sources */,
+				D0DCBE081D85AC3B003FF4EE /* PersistentRestModel.swift in Sources */,
+				D0DCBE031D85AC3B003FF4EE /* Parser.swift in Sources */,
+				D0DCBE041D85AC3B003FF4EE /* PersistentOAuthToken.swift in Sources */,
+				D0DCBE071D85AC3B003FF4EE /* PersistentRestDataEndpoint+CoreDataProperties.swift in Sources */,
+				D0DCBE021D85AC3B003FF4EE /* OAuthToken.swift in Sources */,
+				D0DCBDFC1D85AC3B003FF4EE /* GSPANPersistence.swift in Sources */,
+				D0DCBE0B1D85AC3B003FF4EE /* RestController.swift in Sources */,
+				D0DCBDF81D85AC3B003FF4EE /* Constants.swift in Sources */,
+				D0DCBE061D85AC3B003FF4EE /* PersistentRestDataEndpoint.swift in Sources */,
+				D0DCBE111D85AC3B003FF4EE /* URLSessionProtocol.swift in Sources */,
+				D0DCBE121D85AC3B003FF4EE /* WebAuthVC.swift in Sources */,
+				D0DCBE0D1D85AC3B003FF4EE /* RestModel.swift in Sources */,
+				D0DCBE051D85AC3B003FF4EE /* PersistentOAuthToken+CoreDataProperties.swift in Sources */,
+				D0DCBE101D85AC3B003FF4EE /* URLSessionDataTaskProtocol.swift in Sources */,
+				D0DCBE141D85AC3B003FF4EE /* WebViewAuth.swift in Sources */,
+				D0DCBE0E1D85AC3B003FF4EE /* RestService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,11 +690,13 @@
 				DEFINES_MODULE = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Frameworking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RandyMcLain.Frameworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Frameworking/Frameworking-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -563,10 +708,12 @@
 				DEFINES_MODULE = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Frameworking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RandyMcLain.Frameworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Frameworking/Frameworking-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -611,6 +758,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -633,6 +781,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -647,6 +796,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.RandyMcLain.GSPANTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Frameworking.app/Frameworking";
 			};
 			name = Debug;
@@ -658,6 +808,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RandyMcLain.GSPANTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Frameworking.app/Frameworking";
 			};
 			name = Release;
@@ -711,6 +862,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D0DCBDDB1D85AC3B003FF4EE /* GSPAN_Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D0DCBDDC1D85AC3B003FF4EE /* GSPAN_Model.xcdatamodel */,
+			);
+			currentVersion = D0DCBDDC1D85AC3B003FF4EE /* GSPAN_Model.xcdatamodel */;
+			path = GSPAN_Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D0FCABFE1CDC376000260864 /* Project object */;
 }

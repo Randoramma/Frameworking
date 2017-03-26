@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "Frameworking-Swift.h"
-//#include "GSPAN.h"
+#include "GSPAN.h"
 
 
 @interface ViewController ()
@@ -21,17 +21,37 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  
+  
+  
+  
   // Do any additional setup after loading the view, typically from a nib.
 }
 - (IBAction)segmentedSelected:(id)sender {
-  [[RestController sharedController] thisReallyTotoallyWorked]; 
+  [[RestController getInstance] startupServices:@"FitBit"];
 }
 
 - (IBAction)buttonPressed:(id)sender {
 
-
-  [[Test sharedTest] thisTotallyWorked];
-  [[RestController sharedController] thisReallyTotoallyWorked];
+  [[RestController getInstance] getData:@"FitBit.steps" completion:^(NSArray<NSDictionary<NSString *,id> *> * _Nullable data, NSError * _Nullable error) {
+    if (data != nil ) {
+      // create an array of like 400 objects to save to core data.  
+      NSMutableDictionary *stepsDict = nil;
+      
+      for (int i =0; i < 366; i ++ ) {
+        
+        int startDate = 20150101;
+        int theDate = (startDate + i);
+        int startStep = 0;
+        int theStep = (startStep + i);
+        
+        NSString *dateString = [NSString stringWithFormat:@"%d", theDate];
+        NSString *stepString = [NSString stringWithFormat:@"%d", theStep];
+        [stepsDict setValue: stepString forKey:dateString];
+      }
+      
+    }
+  }];
   
 }
 
