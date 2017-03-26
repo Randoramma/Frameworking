@@ -9,7 +9,7 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "609C6712-C520-469D-836D-CB1733E43DD8",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "EB4E39F94418F045110F207CD77C5D4CCFBA143F" : "mixed-swift-objc-framework",
+    "EB4E39F94418F045110F207CD77C5D4CCFBA143F" : "mixed-swift-objc-framework\/",
     "5878E8019B1276EFFE4C0D2CFEB811E45FB815B3" : ""
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "MyApp",
