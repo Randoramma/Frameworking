@@ -1,0 +1,24 @@
+To create this framework,
+
+¥	Create framework project directory
+¥	Within Xcode create new project of type iOS Cocoa Touch Framework
+If using subprojects / dependencies:
+¥	Clone Subprojects into directory containing <FrameworkProjectName> project <FrameworkProjectName>.xcodeproj file.
+¥	Add any  subproject <Subproject.xcodeproj file> to <FrameworkProjectName>.
+¥	Build Target Dependencies (may have to select Debug first then repeat steps with Release.. unsure at this point)
+¥   Ensure dependencies have "Run Script" (located within Build Phases) setup to use lipo tool to produce
+¥	Select a simulator scheme to build to and Run application (can use Generic iOS Device) to produce a universal library file.
+¥   Add dependencies to linked frameworks and libraries within "General".
+¥   Instructions not currently available to include pods, you'll have to sort that out yourself until I get around to it.
+¥	May need to Adjust the Framework Search Path for Dependencies.
+¥	May need to Adjust the Header Search Path for Dependencies.
+¥	May need to Adjust the Library Search Path for Dependencies (linked Libraries).
+
+Continue building Framrwork if no dependencies or if dependencies already included.
+¥	Edit current scheme the “release build configuration” and repeat Run application.
+¥	Within <FrameworkProjectName> target Build Settings perform the following changes:
+¥	Add “i386” and “x86_64” to the valid architectures setting.
+¥	Change the iOS Deployment Target setting to 8.0
+¥	Create a Cocoa Touch class in Obj-C and change the implementation file to type “Objective-C++ Source
+¥	#include any project visible headers needed within the .mm of the class *only*.
+

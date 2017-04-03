@@ -7,28 +7,36 @@
 //
 
 #import "WrapperClass.h"
-#include "Cube.h"
+#import "RString.h"
+
 
 @interface WrapperClass()
-    
-    @property (nonatomic, assign) Cube myCube;
+@property (nonatomic, assign) RString::RString * myStringChanger;
 
 @end
 
 @implementation WrapperClass
 
-    -(bool) makeACubeWithSidesOfLength:(double)sidelength {
-        Cube myCube = *new Cube();
-        myCube.setSide(sidelength);
-            return [self sideLengthGreaterThanZero:[self getSideForCube:myCube]];
-    }
+
++(bool) containsCharacters:(NSString* )queryString InString:(NSString *)theString {
     
-    -(double) getSideForCube:(Cube )theCube {
-        return theCube.getSide();
-    }
+    std::string bar = std::string([queryString UTF8String]);
+    std::string foo = std::string([theString UTF8String]);
+    return RString::RString::contains(bar, foo);
     
-    -(bool) sideLengthGreaterThanZero:(double)sideLength {
-        return sideLength > 0;
-    }
+}
+
++(NSString *) replaceString:(NSString *)outString withString:(NSString *)inString insideString:(NSString *)queryString {
+    
+    std::string stdstringin = std::string([inString UTF8String]);
+    std::string stdstringout = std::string([outString UTF8String]);
+    std::string stdstrinq = std::string([queryString UTF8String]);
+    
+    NSString*  returnString = [NSString stringWithUTF8String:stdstrinq.c_str()];
+    return returnString; 
+}
+
+
+
     
 @end

@@ -6,17 +6,41 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		D05B0E471E91F0480098A942 /* OldSckoolNewSkoolUniversal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D05B0E481E91F0490098A942 /* Build configuration list for PBXAggregateTarget "OldSckoolNewSkoolUniversal" */;
+			buildPhases = (
+				D05B0E4D1E91F0520098A942 /* Universal Run Script */,
+			);
+			dependencies = (
+				D05B0E4C1E91F04E0098A942 /* PBXTargetDependency */,
+			);
+			name = OldSckoolNewSkoolUniversal;
+			productName = OldSckoolNewSkoolUniversal;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		D05B0E421E907DF80098A942 /* RString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D05B0E401E907DF80098A942 /* RString.cpp */; };
+		D05B0E431E907DF80098A942 /* RString.h in Headers */ = {isa = PBXBuildFile; fileRef = D05B0E411E907DF80098A942 /* RString.h */; };
+		D05B0E451E91E25A0098A942 /* README in Resources */ = {isa = PBXBuildFile; fileRef = D05B0E441E91E25A0098A942 /* README */; };
+		D05B0E4F1E91F1490098A942 /* SwiftWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05B0E4E1E91F1490098A942 /* SwiftWrapper.swift */; };
 		D0F841141E8833C800942211 /* OldSkoolNewSkool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F8410A1E8833C800942211 /* OldSkoolNewSkool.framework */; };
 		D0F841191E8833C800942211 /* OldSkoolNewSkoolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F841181E8833C800942211 /* OldSkoolNewSkoolTests.m */; };
 		D0F8411B1E8833C800942211 /* OldSkoolNewSkool.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F8410D1E8833C800942211 /* OldSkoolNewSkool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0F841261E88350300942211 /* Cube.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F841241E88350300942211 /* Cube.h */; };
-		D0F841271E88350300942211 /* Cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0F841251E88350300942211 /* Cube.cpp */; };
-		D0F8412A1E883FC600942211 /* WrapperClass.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F841281E883FC600942211 /* WrapperClass.h */; };
+		D0F8412A1E883FC600942211 /* WrapperClass.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F841281E883FC600942211 /* WrapperClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0F8412B1E883FC600942211 /* WrapperClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = D0F841291E883FC600942211 /* WrapperClass.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D05B0E4B1E91F04E0098A942 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0F841011E8833C800942211 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0F841091E8833C800942211;
+			remoteInfo = OldSkoolNewSkool;
+		};
 		D0F841151E8833C800942211 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D0F841011E8833C800942211 /* Project object */;
@@ -27,14 +51,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D05B0E401E907DF80098A942 /* RString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RString.cpp; sourceTree = "<group>"; };
+		D05B0E411E907DF80098A942 /* RString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RString.h; sourceTree = "<group>"; };
+		D05B0E441E91E25A0098A942 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		D05B0E4E1E91F1490098A942 /* SwiftWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftWrapper.swift; sourceTree = "<group>"; };
 		D0F8410A1E8833C800942211 /* OldSkoolNewSkool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OldSkoolNewSkool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F8410D1E8833C800942211 /* OldSkoolNewSkool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OldSkoolNewSkool.h; sourceTree = "<group>"; };
 		D0F8410E1E8833C800942211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0F841131E8833C800942211 /* OldSkoolNewSkoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OldSkoolNewSkoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F841181E8833C800942211 /* OldSkoolNewSkoolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OldSkoolNewSkoolTests.m; sourceTree = "<group>"; };
 		D0F8411A1E8833C800942211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0F841241E88350300942211 /* Cube.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Cube.h; sourceTree = "<group>"; };
-		D0F841251E88350300942211 /* Cube.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = Cube.cpp; sourceTree = "<group>"; };
 		D0F841281E883FC600942211 /* WrapperClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrapperClass.h; sourceTree = "<group>"; };
 		D0F841291E883FC600942211 /* WrapperClass.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = WrapperClass.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +87,7 @@
 		D0F841001E8833C800942211 = {
 			isa = PBXGroup;
 			children = (
+				D05B0E4E1E91F1490098A942 /* SwiftWrapper.swift */,
 				D0F8412C1E88433800942211 /* Cube */,
 				D0F841281E883FC600942211 /* WrapperClass.h */,
 				D0F841291E883FC600942211 /* WrapperClass.mm */,
@@ -82,6 +109,9 @@
 		D0F8410C1E8833C800942211 /* OldSkoolNewSkool */ = {
 			isa = PBXGroup;
 			children = (
+				D05B0E401E907DF80098A942 /* RString.cpp */,
+				D05B0E411E907DF80098A942 /* RString.h */,
+				D05B0E441E91E25A0098A942 /* README */,
 				D0F8410D1E8833C800942211 /* OldSkoolNewSkool.h */,
 				D0F8410E1E8833C800942211 /* Info.plist */,
 			);
@@ -100,8 +130,6 @@
 		D0F8412C1E88433800942211 /* Cube */ = {
 			isa = PBXGroup;
 			children = (
-				D0F841241E88350300942211 /* Cube.h */,
-				D0F841251E88350300942211 /* Cube.cpp */,
 			);
 			name = Cube;
 			sourceTree = "<group>";
@@ -113,9 +141,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05B0E431E907DF80098A942 /* RString.h in Headers */,
 				D0F8412A1E883FC600942211 /* WrapperClass.h in Headers */,
 				D0F8411B1E8833C800942211 /* OldSkoolNewSkool.h in Headers */,
-				D0F841261E88350300942211 /* Cube.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,12 +192,18 @@
 		D0F841011E8833C800942211 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Randy McLain";
 				TargetAttributes = {
+					D05B0E471E91F0480098A942 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = QWRJC78833;
+						ProvisioningStyle = Automatic;
+					};
 					D0F841091E8833C800942211 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = QWRJC78833;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					D0F841121E8833C800942211 = {
@@ -193,6 +227,7 @@
 			targets = (
 				D0F841091E8833C800942211 /* OldSkoolNewSkool */,
 				D0F841121E8833C800942211 /* OldSkoolNewSkoolTests */,
+				D05B0E471E91F0480098A942 /* OldSckoolNewSkoolUniversal */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05B0E451E91E25A0098A942 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,13 +250,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D05B0E4D1E91F0520098A942 /* Universal Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Universal Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"============================================================\"\necho \"Merge Script\"\necho \"============================================================\"\n\necho \"============================================================\"\necho \"1 Set bash script to exit immediately if any commands fail.\"\necho \"============================================================\"\nset -e\n\necho \"============================================================\"\necho \"2 Setup some constants for use later on.\"\necho \"============================================================\"\nFRAMEWORK_NAME=\"OldSkoolNewSkool\"\n\necho \"============================================================\"\necho \"3 If remnants from a previous build exist, delete them.\"\necho \"============================================================\"\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi\n\necho \"============================================================\"\necho \"4 Build the framework for device and for simulator (using all needed architectures).\"\necho \"============================================================\"\n\nxcodebuild -target \"${FRAMEWORK_NAME}\" -configuration Release only_active_arch=no defines_module=yes -sdk \"iphoneos\"\nxcodebuild -target \"${FRAMEWORK_NAME}\" -configuration Release only_active_arch=no defines_module=yes -sdk \"iphonesimulator\"\n\necho \"============================================================\"\necho \"5 Remove '.framework' file if exists on Desktop from previous run.\"\necho \"============================================================\"\nif [ -d \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\" ]; then\nrm -rf \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\"\nfi\n\necho \"============================================================\"\necho \"6 Copy the device version of framework to Desktop.\"\necho \"============================================================\"\ncp -r \"${SRCROOT}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework\" \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\"\n\necho \"============================================================\"\necho \"7 Replace the framework executable within the framework with a new version created by merging the device and simulator frameworks' executables with lipo.\"\necho \"============================================================\"\nlipo -create -output \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\"\n\necho \"============================================================\"\necho 8 \"Copy the Swift module mappings for the simulator into the framework.  The device mappings already exist from step 6\"\necho \"============================================================\"\n#cp -r \"${SRCROOT}/build/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule/\" \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule\"\n\necho \"============================================================\"\necho \"9 Delete the most recent build.\"\necho \"============================================================\"\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D0F841051E8833C800942211 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05B0E421E907DF80098A942 /* RString.cpp in Sources */,
 				D0F8412B1E883FC600942211 /* WrapperClass.mm in Sources */,
-				D0F841271E88350300942211 /* Cube.cpp in Sources */,
+				D05B0E4F1E91F1490098A942 /* SwiftWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +289,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D05B0E4C1E91F04E0098A942 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0F841091E8833C800942211 /* OldSkoolNewSkool */;
+			targetProxy = D05B0E4B1E91F04E0098A942 /* PBXContainerItemProxy */;
+		};
 		D0F841161E8833C800942211 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D0F841091E8833C800942211 /* OldSkoolNewSkool */;
@@ -243,6 +302,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D05B0E491E91F0490098A942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = QWRJC78833;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D05B0E4A1E91F0490098A942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = QWRJC78833;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		D0F8411C1E8833C800942211 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -332,6 +407,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -343,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QWRJC78833;
@@ -355,6 +432,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = RandyMcLain.OldSkoolNewSkool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -362,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QWRJC78833;
@@ -374,12 +454,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = RandyMcLain.OldSkoolNewSkool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		D0F841221E8833C800942211 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QWRJC78833;
 				INFOPLIST_FILE = OldSkoolNewSkoolTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -391,6 +473,7 @@
 		D0F841231E8833C800942211 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QWRJC78833;
 				INFOPLIST_FILE = OldSkoolNewSkoolTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -402,6 +485,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D05B0E481E91F0490098A942 /* Build configuration list for PBXAggregateTarget "OldSckoolNewSkoolUniversal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D05B0E491E91F0490098A942 /* Debug */,
+				D05B0E4A1E91F0490098A942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D0F841041E8833C800942211 /* Build configuration list for PBXProject "OldSkoolNewSkool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

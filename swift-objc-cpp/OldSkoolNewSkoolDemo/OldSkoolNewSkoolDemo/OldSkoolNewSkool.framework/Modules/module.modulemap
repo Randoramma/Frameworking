@@ -1,0 +1,10 @@
+framework module OldSkoolNewSkool {
+  umbrella header "OldSkoolNewSkool.h"
+
+  export *
+  module * { export * }
+}
+
+module OldSkoolNewSkool.Swift {
+    header "OldSkoolNewSkool-Swift.h"
+}
